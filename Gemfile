@@ -28,6 +28,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 gem 'mongoid', '~> 8.0', '>= 8.0.3'
+gem 'jwt', '~> 2.7'
+gem 'bcrypt', '~> 3.1', '>= 3.1.18'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
