@@ -4,6 +4,8 @@
 module Api
   # Controller for authentication
   class AuthController < ApplicationController
+    skip_before_action :authenticate_user!, only: %i[signup login]
+
     def signup
       user = User.new(user_params)
       if user.save
