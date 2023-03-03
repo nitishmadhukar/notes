@@ -12,4 +12,6 @@ class Note
 
   validates :title, presence: true
   validates :body, presence: true
+
+  index({ title: 'text', body: 'text' })
 end
