@@ -177,6 +177,7 @@ DEPENDENCIES
   bootsnap
   debug
   jwt (~> 2.7)
+  mongo (~> 2.18, >= 2.18.2)
   mongoid (~> 8.0, >= 8.0.3)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
