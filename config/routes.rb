@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   namespace :api do
     post 'auth/signup', to: 'auth#signup'
     post 'auth/login', to: 'auth#login'
+    resources :notes
   end
 end

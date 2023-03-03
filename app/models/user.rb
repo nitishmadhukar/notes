@@ -24,6 +24,8 @@ class User
 
   before_save :encrypt_password
 
+  has_many :notes
+
   def authenticate(password)
     if BCrypt::Password.new(password_digest) == password
       self
